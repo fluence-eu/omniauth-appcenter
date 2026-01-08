@@ -1,0 +1,16 @@
+AllCops:
+  TargetRubyVersion: 3.1
+
+Style/StringLiterals:
+  EnforcedStyle: single_quotes
+
+Style/StringLiteralsInInterpolation:
+  EnforcedStyle: double_quotes
+
+Naming/FileName:
+  Exclude:
+    - 'lib/omniauth-appcenter.rb'
+
+Layout/LineLength:
+  Exclude:
+    - 'omniauth-appcenter.gemspec'
