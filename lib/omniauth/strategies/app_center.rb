@@ -6,7 +6,7 @@ module OmniAuth
   module Strategies
     # Main class for Fluence OAuth2 strategy.
     class AppCenter < OmniAuth::Strategies::OAuth2
-      DEFAULT_SCOPE = 'user'
+      DEFAULT_SCOPE = 'public'
 
       option :name, 'app_center'
       option :scope, DEFAULT_SCOPE
