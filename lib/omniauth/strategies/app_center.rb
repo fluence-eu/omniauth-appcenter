@@ -10,9 +10,10 @@ module OmniAuth
 
       option :name, 'app_center'
       option :scope, DEFAULT_SCOPE
+      # The consent page is on the hub's front; the idp exchanges the code and serves the user.
       option :client_options,
-             site: 'https://appcenter.fluence.eu',
-             authorize_url: '/oauth/authorize',
+             site: 'https://idp.fluence.eu',
+             authorize_url: 'https://appcenter.fluence.eu/oauth/authorize',
              token_url: '/oauth/token'
       option :provider_ignores_state, true
 

@@ -1,5 +1,10 @@
 ## [Unreleased]
 
+## [0.3.0] - 2026-11-23
+
+- **Breaking:** the code is exchanged and the user read on the idp (`https://idp.fluence.eu`); the consent page stays
+  on the hub's front (`https://appcenter.fluence.eu/oauth/authorize`).
+
 ## [0.2.0] - 2026-11-23
 
 - **Breaking:** the user's info is read from `/oauth/userinfo`; appcenter no longer serves `/api/v1/me`.
