@@ -28,8 +28,8 @@ Add the provider to your OmniAuth initializer:
 # config/initializers/omniauth.rb
 Rails.application.config.middleware.use OmniAuth::Builder do
   provider :app_center,
-           ENV['APPCENTER_CLIENT_ID'],
-           ENV['APPCENTER_CLIENT_SECRET']
+           ENV['IDP_CLIENT_ID'],
+           ENV['IDP_CLIENT_SECRET']
 end
 ```
 
@@ -41,8 +41,8 @@ If you're using Devise, add the provider to your Devise configuration:
 # config/initializers/devise.rb
 Devise.setup do |config|
   config.omniauth :app_center,
-                  ENV['APPCENTER_CLIENT_ID'],
-                  ENV['APPCENTER_CLIENT_SECRET']
+                  ENV['IDP_CLIENT_ID'],
+                  ENV['IDP_CLIENT_SECRET']
 end
 ```
 
@@ -52,8 +52,8 @@ You can specify a custom redirect URI:
 
 ```ruby
 provider :app_center,
-         ENV['APPCENTER_CLIENT_ID'],
-         ENV['APPCENTER_CLIENT_SECRET'],
+         ENV['IDP_CLIENT_ID'],
+         ENV['IDP_CLIENT_SECRET'],
          redirect_uri: 'https://your-app.com/auth/app_center/callback'
 ```
 
